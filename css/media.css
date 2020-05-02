@@ -1,0 +1,536 @@
+@media(max-width:1920px) {
+
+}
+
+@media(max-width:1560px) {
+
+}
+
+@media(max-width:1367px) {
+    .topBoxs {
+        margin-top: 85px;
+    }
+    .navbar-expand-md
+    {
+        width: 100%;
+        justify-content: space-between;
+    display: flex;
+    align-items: center;
+    }
+    .navbar-expand-md .navbar-nav
+    {
+        display: initial;
+    }
+    .navbar-expand-md .navbar-toggler {
+        display: block;
+    }
+    .navbar-expand-md .navbar-collapse {
+        position: fixed;
+        width: 250px;
+        top: 0;
+        left: -250px;
+        background: #fff;
+        height: 100%;
+        transition: all 0.3s ease;
+        display: initial !important;
+        margin: 0;
+        margin-top: 88px;
+        padding: 20px 15px 0px 30px;
+        z-index: 9;
+        box-shadow: 0px 2px 3px 0px rgba(0,0,0, 0.5);
+    }
+    .navIcon
+    {
+        right: -50px;
+    }
+    .navIcon::before,
+    .navIcon::after,
+    .navIcon
+    {
+        background-color: var(--colorRed);
+    }
+    .header
+    {
+        padding-right: 90px;
+    }
+    .nav-item
+    {
+        margin-right: 0;
+        margin-bottom: 20px;
+        display: inline-block;
+        float: left;
+        width: 100%;
+    }
+    .nav-item:not(:last-child) {
+    margin-right: 0px;
+}
+    
+}
+
+@media(max-width:1199px) {
+
+.header {
+    justify-content: space-between;
+}
+    .dashImg {
+    height: 25px;
+    width: 25px;
+}
+    .nav-link {
+    font-size: 14px;
+}
+/*
+    .navbar-expand-md .navbar-collapse {
+    margin: 0px 25px;
+}
+*/
+    .logoImg {
+    height: 75px;
+    width: 75px;
+}
+    .nav-item:not(:last-child) {
+    margin-right: 10px;
+}
+.headRInn a {
+    font-size: 16px;
+    padding: 14px 10px;
+}
+    .headRInn a span {
+    display: none;
+}
+    .headProfile a {
+    width: 30px;
+    height: 30px;
+            margin-right: 8px;
+}
+        .squareLine {
+    border: 15px solid var(--colorLight);
+    margin-top: 88px;
+    padding: 25px 35px 300px;
+}
+/*
+    .header{
+        display: none;
+    }
+*/
+       .tabAll ul li {
+    margin-right: 25px;
+}
+    .tabAll ul li a {
+    font-size: 18px;
+}
+    .tabInner .table-responsive .table {
+  min-width: 1200px;
+    overflow-x: auto;
+}
+    .tabInner .table-responsive {
+    overflow-x: scroll;
+}
+    .dashBox {
+    width: 30%;
+}
+    .createEst {
+    float: left;
+}
+    .dashBoxAll {
+    padding: 30px 0px 20px;
+}
+    .avatar-upload .avatar-preview {
+    width: 120px;
+    height: 120px;
+}
+    .settBtn {
+    padding-top: 25px;
+}
+/********************/
+.header
+{
+    line-height: 68px;
+    padding-right: 70px;
+}
+.squareLine
+{
+    margin-top: 75px;
+}
+.navbar-expand-md .navbar-collapse
+{
+    margin-top: 75px;
+}
+.navIcon {
+    right: -40px;
+}
+}
+
+@media(max-width:991px) {
+
+.tabAll {
+    display: block;
+}
+    .expertRight {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 40px 0px;
+}
+    .squareLine {
+    border: 15px solid var(--colorLight);
+    margin-top: 75px;
+    padding: 25px 35px 200px;
+}
+    th,td {
+    font-size: 20px;
+}
+    .dashBox {
+    width: 30%;
+}
+    .dashBox h2 {
+    font-size: 85px;
+    line-height: 75px;
+}
+    .dashBox p {
+    font-size: 20px;
+}
+    .dashBox.dashBox2 {
+    margin: 0px 30px;
+}
+    .createEst a {
+    font-size: 20px;
+}
+    .createEst {
+    margin: 40px 0px 30px;
+        min-height: auto;
+}
+    .invLeft h2:nth-child(2) {
+    font-size: 24px;
+}
+    .invRight h3 {
+    font-size: 22px;
+}
+    .invRight .tSale {
+    font-size: 24px;;
+    padding: 4px 22px;
+}
+    .select {
+    width: 59%;
+}
+     .modal-dialog{
+        width: 600px;
+    }
+    .clientlist p {
+    font-size: 20px;
+}
+    .clientlist p span {
+    font-size: 18px;
+}
+    .clientlist .clientImage {
+    height: 45px;
+    width: 45px;
+}
+    .clientlist {
+    padding: 10px 0;
+}
+    .cityDrop.cityDrop2 .select-styled{
+        font-size: 20px;
+    }
+    .modal.recordPayment input {
+    padding: 13px 12px;
+}
+}
+
+@media(max-width:767px) {
+
+/*    my code start*/
+    .dashBox {
+    width: 42%;
+}
+    .createEst {
+    margin: 40px 0px 30px 30px;
+        min-height: 197px;
+}
+    .createEst a {
+    font-size: 18px;
+    padding: 8px 25px;
+}
+    .dashBox.dashBox3{
+        margin-top: 30px;
+    }
+    .invRight {
+    float: left;
+    padding-top: 20px;
+}
+    .clientInv .row .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+    h2.main {
+    font-size: 26px;
+}
+    .invLeft h2:nth-child(2) {
+    font-size: 22px;
+}
+    .settingForm .form-group {
+    width: 100%;
+}
+    .settBtn.settBtn2 {
+    text-align: center;
+}
+    .select {
+    width: 60%;
+}
+    .logBack {
+
+     padding: 0px 0px; 
+}
+    /********************/
+.header
+{
+    /* line-height: 68px; */
+    padding: 0;
+    padding-right: 60px;
+}
+ .modal-dialog {
+    width: 495px;
+}
+    .modal.recordPayment input {
+    padding: 15px 12px;
+    font-size: 18px;
+}
+    .select-styled {
+    font-size: 20px;
+}
+    .customRadio p {
+    font-size: 18px;
+}
+    .cityDrop.cityDrop2 .select{
+            padding: 28px 14px
+    }
+}
+
+@media(max-width:560px) {  
+.tabAll {
+    display: block;
+    overflow-x: scroll;
+}
+    .tabAll ul{
+    min-width: 500px;
+    overflow-x: auto;
+}
+    .expertReport a {
+    font-size: 16px;
+    padding: 10px 12px;
+}
+    .filterAll a {
+    font-size: 16px;
+    padding: 12px 16px;
+}
+    .searchAll a {
+    margin: 0px 12px 0px 12px;
+}
+    .squareLine {
+    padding: 25px 35px 100px;
+}
+    .squareLine {
+    padding: 20px 2px 135px;
+}
+    .tds {
+    font-size: 14px;
+}
+    
+}
+@media(max-width:560px) {
+
+    .expertRight {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 30px 0px;
+}
+    .squareLine {
+    border: 15px solid var(--colorWhite);
+}
+    th, td {
+    font-size: 18px;
+}
+    .tabAll ul {
+    min-width: 450px;
+}
+.dashBox.dashBox2 {
+     margin: 20px 0px; 
+}
+    .dashBox {
+    width: 100%;
+}
+    .dashBox.dashBox3 {
+    margin-top: 0px;
+}
+    .createEst {
+    margin: 40px 0px 30px 30px;
+     min-height: auto; 
+}
+    .createEst {
+    margin: 35px 0px 25px 0px;
+
+}
+    .tabInner .table-responsive {
+    margin-top: 35px;
+}
+    h2.head {
+    font-size: 18px;
+}
+    .tabAll.tabAll2 {
+   overflow-x: auto;
+}
+        .tabAll.tabAll2 ul{
+            min-width: auto;
+   overflow-x: auto;
+}
+    .settingForm .form-group .form-control {
+    font-size: 18px;
+}
+    .select {
+    width: 59%;
+    padding: 24px 14px;
+}
+    .avatar-upload .avatar-edit input + label:after {
+    font-size: 18px;
+}
+    .avatar-upload .avatar-edit {
+    left: 25px;
+}
+    .select-styled {
+    font-size: 18px;
+}
+    .modal-dialog {
+    width: 385px;
+}
+    .clientlist p span {
+    font-size: 15px;
+}
+    .clientlist p {
+    font-size: 18px;
+}
+    .clientlist {
+    padding: 8px 0;
+}
+    .modal-body {
+    padding: 15px;
+}
+    .clientlist .clientImage {
+    height: 35px;
+    width: 35px;
+}
+    .customRadio p {
+    margin-right: 35px;
+}
+    .deleteBtn ul li a {
+    font-size: 20px;
+    padding: 10px 35px;
+}
+}
+@media(max-width:414px){
+ h2.head {
+    font-size: 16px;
+} 
+    h2.main {
+    font-size: 25px;
+}
+    .invLeft h2:nth-child(2) {
+    font-size: 20px;
+}
+    .invRight h3 {
+    font-size: 20px;
+}
+    tabAll.tabAll2.tabAll3{
+            overflow-x: scroll;
+    }
+        .tabAll.tabAll2.tabAll3 ul{
+             min-width: 350px;
+    }
+    .avatar-upload .avatar-edit input + label {
+    width: 274px;
+} 
+    .avatar-upload .avatar-edit input + label:after {
+    top: 15px;
+    left: 18%;
+        font-size: 16px;
+}
+    .loginInner .form-group .form-control {
+    font-size: 18px;
+}
+    .logAn a {
+    padding: 5px 0px;
+}
+        /**********************/
+    .header {
+        padding-right: 50px;
+    }
+    .modal-dialog {
+    width: 325px;
+}
+    .btnStyle.btnStyle2 button {
+    padding: 14px 50px;
+}
+    .headRInn a {
+    font-size: 15px;
+    padding: 14px 5px;
+}
+    .headRInn {
+    margin-right: 12px;
+}
+    .clientlist p span {
+    font-size: 14px;
+}
+    .clientlist p {
+    font-size: 16px;
+}
+    .clientlist .clientDetails span {
+    margin-top: 0px;
+}
+    .clientlist {
+    padding: 5px 0;
+}
+    .modal-content .close {
+    right: -12px;
+    top: -17px;
+}
+    .modal.recordPayment input {
+    padding: 12px 12px;
+    font-size: 16px;
+}
+    .customRadio p {
+    margin-right: 16px;
+    font-size: 16px;
+}
+    .customRadio input:checked + label, .customRadio input:not(:checked) + label {
+    padding-left: 30px;
+}
+    .customRadio .form-group {
+    margin-right: 10px;
+}
+    .deleteAlll .modal-dialog {
+    max-width: 275px;
+}
+    .deleteBtn ul {
+    margin: 15px 0px 10px;
+}
+    .deleteBtn ul li a {
+    font-size: 18px;
+}
+    .modal-dialog {
+    width: 300px;
+}r na
+}
+
+@media(max-width:332px) {
+
+    .filterAll{
+        display: block;
+        padding-top: 25px;
+    }
+     h2.head {
+    font-size: 15px;
+} 
+    .invLeft h2:nth-child(2) {
+    font-size: 18px;
+}
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DW | Expenses</title>
+    <link href="img/fav.png" rel="icon" type="icon/image">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/hamburgers.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+</head>
+
+<body>
+   <!--    <    <!-- Header Start -->
+    <div class="header boxs">
+        <nav class="navbar navbar-default">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand logoImg" href="index.html"><img src="img/logo.png"></a>
+               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav"><span class="navIcon"></span></button>
+                <div class="navbar-collapse" id="nav">
+                    <div class="headerBox d-flex align-items-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html"><span class="dashImg"><img src="img/dashboard.svg" class="img-fluid dashImg01" alt="dash"><img src="img/dashred.svg" class="img-fluid dashImg2" alt="dash"></span>Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link" href="estimate.html"><span class="dashImg"><img src="img/estimates.svg" class="img-fluid dashImg01" alt="dash"><img src="img/estimates2.svg" class="img-fluid dashImg2" alt="dash"></span>Estimates</a></li>
+                            <li class="nav-item"><a class="nav-link" href="invoices.html"><span class="dashImg"><img src="img/invoices.svg" class="img-fluid dashImg01" alt="dash"><img src="img/invoices2.svg" class="img-fluid dashImg2" alt="dash"></span>Invoices</a></li>
+                            <li class="nav-item"><a class="nav-link" href="client.html"><span class="dashImg"><img src="img/clients.svg" class="img-fluid dashImg01" alt="dash"><img src="img/clients2.svg" class="img-fluid dashImg2" alt="dash"></span>Clients</a></li>
+                            <li class="nav-item"><a class="nav-link" href="salesteam.html"><span class="dashImg"><img src="img/clients.svg" class="img-fluid dashImg01" alt="dash"><img src="img/clients2.svg" class="img-fluid dashImg2" alt="dash"></span>Sales Team</a></li>
+                            <li class="nav-item"><a class="nav-link" href="setting.html"><span class="dashImg"><img src="img/setting.svg" class="img-fluid dashImg01" alt="dash"><img src="img/setting2.svg" class="img-fluid dashImg2" alt="dash"></span>Settings</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="headerRight">
+                    <div class="headRInn">
+                         <a href="javascript:void(0)"  data-toggle="modal" data-target="#createEstimate"><span><img src="img/createEst.svg" class="img-fluid creat1" alt="est"><img src="img/createEst2.svg" class="img-fluid creat2" alt="est"></span>Create Estimate</a>
+                     </div>
+                     <div class="headProfile">
+                         <a href="javascript:void(0)">
+                             <img src="img/profile.svg" class="profile" alt="profile"></a>
+         
+                         <div class="profLogs">
+                             <ul>
+                                 <li><a href="javascript:void(0)">Logout</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+            </nav>
+            
+        </nav>
+
+    </div>
+    <!-- Header End -->
+
+
+    <!--    dashboard code start-->
+    <section class="squareLine boxs">
+
+
+        <!--    Payments Pending to be Recorded code start-->
+        <div class="tableHead boxs">
+            <div class="tabInner">
+                <div class="tabAll tabAll2 tabAll3">
+                    <ul>
+                        <li><a href="javascript:void(0)" class="clicktab colActive" data-type="1">All Expenses</a></li>
+                        <li><a href="javascript:void(0)" class="clicktab" data-type="2">GST Claimable Expenses</a></li>
+                    </ul>
+                </div>
+
+                <div class="expertRight">
+                    <div class="expertReport">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#salesAdd">Add Expense</a>
+                    </div>
+                    <div class="searchAll">
+                        <a href="javascript:void(0)"><span><img src="img/search1.svg"></span></a>
+                        <div class="searchBox">
+                            <input type="text" class="form-control" placeholder="search...">
+                        </div>
+                    </div>
+                    <div class="filterAll">
+                        <a href="javascript:void(0)"><span><img src="img/filter.svg"></span>Filter</a>
+
+                        <div class="fillterInner">
+                            <div class="form-group">
+                                <label>From</label>
+                                <div class="form-group dateBox dateBox2">
+                                    <input type="date" class="form-control" placeholder="Date of A/C Credit" id="creditDate">
+                                    <span><img src="img/date.svg" class="img-fluid" alt="icon"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>To</label>
+                                <div class="form-group dateBox dateBox2">
+                                    <input type="date" class="form-control" placeholder="Date of A/C Credit" id="creditDate">
+                                    <span><img src="img/date.svg" class="img-fluid" alt="icon"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payDtl payDtl1">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Sno.</th>
+                                    <th>Date</th>
+                                    <th>Paid to</th>
+                                    <th>Amount</th>
+                                    <th>Purpose</th>
+                                    <th>Payment Mode </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>12th Feb, 20</td>
+                                    <td>AS Board & Paper Boxes Pvt. Ltd.</td>
+                                    <td> ₹3,24, 000</td>
+                                    <td>Office Rent</td>
+                                    <td>Cheque(504302)</td>
+                                    <td><a href="#" class="tds" data-toggle="tooltip" title=" Tax Deducted at Source">TDS</a><span class="gst">GST</span><a href="#"><img src="img/download.svg" class="img-fluid" alt="img"></a></td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="payDtl payDtl2">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Sno.</th>
+                                    <th>Date</th>
+                                    <th>Paid to</th>
+                                    <th>Amount</th>
+                                    <th>Purpose</th>
+                                    <th>Payment Mode </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>12th Feb, 20</td>
+                                    <td>AS Board & Paper Boxes Pvt. Ltd.</td>
+                                    <td> ₹3,24, 000</td>
+                                    <td>Office Rent</td>
+                                    <td>Cheque(504302)</td>
+                                    <td><a href="#" class="tds" data-toggle="tooltip" title=" Tax Deducted at Source">TDS</a><span class="gst">GST</span><a href="#"><img src="img/download.svg" class="img-fluid" alt="img"></a></td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--    Payments Pending to be Recorded code end-->
+    </section>
+    <!--    dashboard code end-->
+    <!-- Start of Popup Modal -->
+    <div class="modal createEstimate fade" id="createEstimate" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt="Close_Button" class="img-responsive"></button>
+                <form>
+                    <div class="modal-body">
+                        <div class="estimateform boxs">
+                            <h2 class="head">Select Client or Create new client</h2>
+                            <div class="estimateInner boxs">
+                                <div class="form-group searchType boxs">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <button><span><img src="img/search1.svg"></span></button>
+                                </div>
+                                <div class="clientsLists boxs">
+                                    <div class="clientlist boxs">
+                                        <div class="listLeft">
+                                            <div class="clientImage">
+                                                <img src="" class="img-fluid">
+                                            </div>
+                                            <div class="clientDetails">
+                                                <p>Dave Cogan<span>dave@ipg360.co.in</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="listRight">
+                                            <p><span>IPG 360, INC</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="clientlist boxs">
+                                        <div class="listLeft">
+                                            <div class="clientImage">
+                                                <img src="" class="img-fluid">
+                                            </div>
+                                            <div class="clientDetails">
+                                                <p>Dave Cogan<span>dave@ipg360.co.in</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="listRight">
+                                            <p><span>IPG 360, INC</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="clientlist boxs">
+                                        <div class="listLeft">
+                                            <div class="clientImage">
+                                                <img src="" class="img-fluid">
+                                            </div>
+                                            <div class="clientDetails">
+                                                <p>Dave Cogan<span>dave@ipg360.co.in</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="listRight">
+                                            <p><span>IPG 360, INC</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="clientlist boxs">
+                                        <div class="listLeft">
+                                            <div class="clientImage">
+                                                <img src="" class="img-fluid">
+                                            </div>
+                                            <div class="clientDetails">
+                                                <p>Dave Cogan<span>dave@ipg360.co.in</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="listRight">
+                                            <p><span>IPG 360, INC</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="clientlist boxs">
+                                        <div class="listLeft">
+                                            <div class="clientImage">
+                                                <img src="" class="img-fluid">
+                                            </div>
+                                            <div class="clientDetails">
+                                                <p>Dave Cogan<span>dave@ipg360.co.in</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="listRight">
+                                            <p><span>IPG 360, INC</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="" type="button">Create New Client</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End of Popup Modal -->
+
+
+    <!-- Add Sales Person Modal -->
+    <div class="modal recordPayment addExpense fade" id="salesAdd" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt="Close_Button" class="img-responsive"></button>
+
+                <div class="modal-body">
+                    <div class="estimateform addsalesPerson boxs">
+                        <h2 class="head">Add Sales Team Member</h2>
+
+                        <div class="paymentRecord boxs">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name of Vendor" id="vernorName">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Purpose of Payment" id="paymentPurpose">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Amount Paid" id="amtPaid">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" placeholder="Date of Payment" id="paymentDate">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 customRadio">
+                                        <p>Is this a GST Bill ?</p>
+                                        <div class="form-group mb-0">
+                                            <input type="radio" id="gstBill1" name="gstBIll">
+                                            <label for="gstBill1">Yes</label>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <input type="radio" id="gstBill2" name="gstBIll">
+                                            <label for="gstBill2">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="cityDrop cityDrop2">
+                                                <select id="mounth">
+                                                    <option value="hide">Payment M ethod</option>
+                                                    <option value="Cash" rel="icon-temperature">Cheque</option>
+                                                    <option value="Cheque" rel="icon-temperature">Cheque</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Cheque Number (if any)" id="chequeNumber">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="TDS Deducted (if any) " id="tdsDeducted">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group fileUpload">
+                                            <input type="file" class="form-control" placeholder="Name" id="fileupload">
+                                            <label for="fileupload"><span><img src="img/upload.svg" class="img-fluid" alt="icon"></span>TDS Deducted (if any)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group btnStyle mb-0">
+                                            <button type="submit">Save Expense</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Sales Person Modal -->
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
